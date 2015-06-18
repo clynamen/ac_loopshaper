@@ -150,7 +150,6 @@ end
 
 function slider_Kc_cb(es, ~)
     global LS
-    display(es.Value);
     LS.Kc = sign(LS.Kc) * 10^(es.Value-4);
     update()
 end
